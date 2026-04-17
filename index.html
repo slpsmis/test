@@ -1,6 +1,164 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>樹林國小 - 數位教材網</title>
+    <style>
+        /* 基本樣式設定 */
+        body {
+            font-family: "Microsoft JhengHei", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        /* 頁首與導覽列 */
+        header {
+            background-color: #005aab;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            background: #004a8d;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* 主內容區 */
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .hero {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        /* 教材卡片設計 */
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            margin-top: 0;
+            color: #005aab;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #218838;
+        }
+
+        /* 頁尾 */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
+</head>
 <body>
-  <h1>哈囉！這是我的第一個 GitHub Pages 網站</h1>
+
+<header>
+    <h1>樹林國小數位教材網</h1>
+    <p>歡迎來到數位學習園地</p>
+</header>
+
+<nav>
+    <a href="#">首頁</a>
+    <a href="#">語文領域</a>
+    <a href="#">數學領域</a>
+    <a href="#">自然科學</a>
+    <a href="#">資訊教育</a>
+</nav>
+
+<div class="container">
+    <div class="hero">
+        <h2>最新公告</h2>
+        <p>115 學年度數位教材更新完畢，歡迎親師生多加利用。</p>
+    </div>
+
+    <div class="course-grid">
+        <div class="card">
+            <div class="card-content">
+                <h3>國語文教學資源</h3>
+                <p>包含課文朗讀、生字練習與優良作品分享。</p>
+                <a href="#" class="btn">進入學習</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h3>趣味數學天地</h3>
+                <p>透過互動遊戲學習加減乘除與邏輯思考。</p>
+                <a href="#" class="btn">進入學習</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h3>資訊素養與 Scratch</h3>
+                <p>學習基礎程式設計，創造屬於自己的小遊戲。</p>
+                <a href="#" class="btn">進入學習</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 樹林國小 數位學習小組</p>
+</footer>
+
 </body>
 </html>
